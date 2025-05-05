@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Playground</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="themeToggle" class="theme-btn">🌓 Toggle Theme</button>
+    
+    <div class="container">
+        <!-- Event Handling Section -->
+        <section class="event-section">
+            <h2>🎪 Event Circus</h2>
+            <button id="magicBtn" class="bouncy">Abracadabra!</button>
+            <div id="hoverZone" class="hover-box">Hover over me!</div>
+            <div id="secretMessage" class="hidden">You found the secret key! 🗝️</div>
+            <div id="doubleClickTarget" class="secret-spot">Double-click for magic</div>
+        </section>
+
+        <!-- Interactive Elements -->
+        <section class="interactive-section">
+            <h2>🎮 Play Zone</h2>
+            <div class="color-changer">
+                <button id="colorSwitch">Change Background Color!</button>
+            </div>
+            
+            <div class="image-gallery">
+                <button id="prevBtn">◀</button>
+                <img src="https://picsum.photos/300/200?random=1" alt="Gallery image" class="active">
+                <img src="https://picsum.photos/300/200?random=2" alt="Gallery image" class="hidden">
+                <img src="https://picsum.photos/300/200?random=3" alt="Gallery image" class="hidden">
+                <button id="nextBtn">▶</button>
+            </div>
+
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="1">Tab 1</button>
+                <button class="tab-btn" data-tab="2">Tab 2</button>
+                <div class="tab-content active" data-tab="1">Content for tab 1 ✨</div>
+                <div class="tab-content" data-tab="2">Content for tab 2 🌟</div>
+            </div>
+        </section>
+
+        <!-- Form Validation -->
+        <section class="form-section">
+            <h2>📋 Membership Form</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <div class="error-message"></div>
+                </div>
+                <button type="submit">Join the Party! 🎉</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>🎉 Made with magic by NSegecha &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
